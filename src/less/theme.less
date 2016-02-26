@@ -1,0 +1,223 @@
+::selection{
+    background-color: @color-three;
+    color: @color-white;
+}
+
+::-moz-selection {
+    background-color: @color-three;
+    color: @color-white;
+}
+
+html,
+body {
+    font-family: 'Karla', sans-serif;
+
+    p {
+        font-size: @font-size;
+        line-height: 1.8;
+    }
+}
+
+.btn-one {
+    background-color: @color-two;
+    border-radius: 0;
+    border: 1px solid @color-two;
+    padding: 10px 35px;
+    .transition-fade;
+
+    a {
+        color: @color-white;
+        text-decoration: none;
+    }
+
+    &:hover {
+        background-color: lighten(@color-two, 10%);
+    }
+}
+
+.background-one {
+    background-color: @color-white;
+    margin: 20px;
+}
+
+.background-two {
+    background-color: @color-one;
+    margin: 20px;
+}
+
+.skill-card {
+    border: 5px solid @color-white;
+    padding: 10px 5px;
+    text-align: center;
+    .transition-fade;
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .intro {
+        text-decoration: underline;
+    }
+
+    p {
+        font-size: @list-size;
+    }
+
+    li {
+        font-size: @list-size;
+        margin-top: @margin-default;
+    }
+
+    &:hover {
+        background-color: @color-three;
+        border: 5px solid lighten(@color-three, 20%);
+
+        h1, li, .intro, p {
+            color: @color-white;
+        }
+    }
+}
+
+.tools {
+
+    li {
+        .transition-fade;
+
+        &:hover {
+            color: @color-three;
+        }
+    }
+}
+
+.container-macbook {
+    .transition-fade;
+
+    &:hover {
+        background-color: lighten(@color-two, 10%);
+    }
+
+    .cta-macbook {
+        position: absolute;
+        bottom: 15px;
+        left: 45%;
+
+        i {
+            font-size: @font-size;
+            color: @color-one;
+
+            &:hover {
+                color: @color-three;
+            }
+        }
+    }
+
+    .macbook {
+        width: @macbook;
+        margin: 50px auto;
+
+        .screen {
+            width: @macbook-screen;
+            height: @macbook-height-screen;
+            background-color: @color-two;
+            border-radius: 15px 15px 0 0;
+            margin: 0 auto;
+
+            img {
+                margin-top: @margin-default;
+                margin-left: @margin-default;
+            }
+        }
+
+        .keyboard {
+            width: @macbook;
+            height: 10px;
+            background-color: @macbook-color;
+            border-radius: 8px 8px 30px 30px;
+        }
+    }
+}
+
+.contact {
+
+    .btn-form {
+        width: @btn-form;
+        height: @btn-form;
+        margin-top: 20px;
+        background-color: @color-three;
+        border: 2px solid @color-three;
+        border-radius: 50%;
+        .transition-fade;
+
+        &:hover {
+            background-color: @color-white;
+            border: 2px solid @color-three;
+
+            i {
+                color: @color-three;
+            }
+        }
+
+        i {
+            color: @color-white;
+            font-size: @font-size;
+        }
+
+    }
+
+    input,
+    textarea {
+        color: @color-two;
+        border-top: 2px solid @color-white;
+        border-left: 2px solid @color-white;
+        border-right: 2px solid @color-white;
+        border-bottom: 2px solid @color-one;
+        -webkit-box-shadow: inset 0 1px 1px  @color-white;
+        box-shadow: inset 0 1px 1px  @color-white;
+        -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+        -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+        transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+
+        &:focus {
+            border-top: 2px solid @color-white;
+            border-left: 2px solid @color-white;
+            border-right: 2px solid @color-white;
+            border-bottom: 2px solid @color-three;
+            -webkit-box-shadow: inset 0 1px 1px @color-white;
+            box-shadow: inset 0 1px 1px @color-white;
+        }
+    }
+}
+
+footer {
+    background-color: @color-one;
+    padding: 20px;
+
+    p {
+        a {
+            .transition-fade;
+            color: @color-two;
+            font-style: italic;
+
+            &:hover {
+                color: @color-three;
+            }
+        }
+
+        i {
+            color: @color-red;
+            font-size: 24px;
+        }
+    }
+
+    ul {
+        li a {
+            .transition-fade;
+            color: @color-two;
+            font-size: @font-size;
+
+            &:hover {
+                color: @color-three;
+            }
+        }
+    }
+}

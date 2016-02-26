@@ -1,0 +1,16 @@
+{
+  "name": "book",
+  "scripts": {
+    "gulp": "gulp"
+  },
+  "dependencies": {
+    "bootstrap": "3.3.6",
+    "font-awesome-animation": "0.0.8",
+    "jquery": "^2.2.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-concat": "2.6.0",
+    "gulp-less": "3.0.3"
+  }
+}

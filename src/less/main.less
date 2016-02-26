@@ -1,0 +1,101 @@
+@import (inline) '../../node_modules/font-awesome-animation/vendor/font-awesome/css/font-awesome.min.css';
+@import (inline) '../../node_modules/font-awesome-animation/dist/font-awesome-animation.min.css';
+
+@import '../../node_modules/bootstrap/less/bootstrap.less';
+
+@import 'variable';
+@import 'theme';
+
+.container-entry {
+    background-color: @color-one;
+    margin-top: 20px;
+    margin-left: 20px;
+
+    div {
+        position: relative;
+        top: 9em;
+
+        @media screen and (max-width: 640px) {
+            top: 11em;
+        }
+    }
+
+    img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50em;
+    }
+
+    h1,
+    h2 {
+        color: @color-two;
+    }
+
+    h1 {
+        font-weight: @font-bold;
+    }
+
+    h2 {
+        margin-top: -5px;
+    }
+
+    ul {
+        position: relative;
+        top: 18em;
+    }
+
+    i {
+        font-size: 20px;
+        color: @color-three;
+    }
+}
+
+
+.background-one,
+.background-two {
+    h1 {
+        color: @color-three;
+        font-weight: @font-bold;
+        text-transform: uppercase;
+    }
+
+    h3 {
+        font-weight: @font-light;
+    }
+
+    p {
+        a {
+            font-weight: @font-bold;
+            color: @color-three;
+            text-decoration: underline;
+        }
+    }
+
+    .circle {
+        display: block;
+
+        span {
+            position: relative;
+            left: -78px;
+            top: -60px;
+        }
+    }
+}
+
+
+.list-custom {
+    margin-top: 20px;
+    text-align: center;
+
+    li {
+        margin: @margin-default;
+        padding: @padding-default;
+
+        label {
+            display: block;
+            margin: @margin-default;
+            font-weight: @font-light;
+            font-size: @font-size;
+        }
+    }
+}
