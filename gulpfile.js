@@ -1,6 +1,7 @@
 var gulp = require('gulp'),
     concat = require('gulp-concat'),
     less = require('gulp-less'),
+    jscs = require('gulp-jscs'),
     path = require('path')
 ;
 
@@ -78,3 +79,9 @@ gulp.task('watch', function() {
 
     gulp.watch(__dirname + '/gulpfile.js', ['build']);
 });
+
+gulp.task('test:cs', function() {
+    return gulp.src(files.js)
+        .pipe(jscs({fix: true}))
+});
+
