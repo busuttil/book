@@ -19,7 +19,7 @@ var files = {
     ],
 
     js: [
-        directories.src + '/js/background-fullpage.js'
+        directories.src + '/js/**'
     ],
 
     html: [
