@@ -7133,3 +7133,8 @@ footer ul li a:hover {
   font-weight: 400;
   font-size: 18px;
 }
+button.close {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}

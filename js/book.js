@@ -16,13 +16,14 @@ jQuery(document).ready(function() {
         var $modal = $('#myModal'),
             $header = $('.modal-header', $modal),
             $body = $('.modal-body', $modal),
+            $footer = $('.modal-footer', $modal),
             index = $('.cta-macbook .index-modal').index(this);
 
         $.getJSON(bookJson)
             .done(function(data) {
                 $('h4', $header).text(data[index].title);
                 $body.children().remove();
-                $body.text(data[index].content);
+                $('p', $footer).text(data[index].content);
                 $body.prepend($('<img/>').attr('src', data[index].img));
             });
     });
