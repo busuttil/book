@@ -23,7 +23,7 @@ var files = {
     ],
 
     html: [
-        directories.src + '/index.html'
+        directories.src + '/*.html'
     ],
 
     less: [
@@ -32,10 +32,12 @@ var files = {
 
     fonts: directories.modules + '/font-awesome-animation/vendor/font-awesome/fonts/*',
 
-    images: directories.src + '/images/**'
+    images: directories.src + '/images/**',
+
+    json: directories.src + '/book.json'
 };
 
-gulp.task('default', ['vendor', 'js', 'html', 'less', 'fonts', 'images']);
+gulp.task('default', ['vendor', 'js', 'html', 'less', 'fonts', 'images', 'json']);
 gulp.task('watch', ['build', 'watch']);
 
 gulp.task('vendor', function() {
@@ -71,6 +73,11 @@ gulp.task('fonts', function() {
 gulp.task('images', function() {
     gulp.src(files.images)
         .pipe(gulp.dest(directories.public + '/images'));
+});
+
+gulp.task('json', function() {
+    gulp.src(files.json)
+        .pipe(gulp.dest(directories.public + '/json'));
 });
 
 gulp.task('watch', function() {

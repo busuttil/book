@@ -1,0 +1,64 @@
+.color-one {
+    background-color: @color-white;
+}
+
+.color-two {
+    background-color: @color-one;
+    padding: 20px 15px;
+}
+
+.header-projet {
+
+    .img-projet {
+        max-width: 550px;
+    }
+}
+
+.content-projet {
+
+    h1 {
+        color: @color-two;
+        text-transform: uppercase;
+    }
+    p {
+        font-size: 16px;
+    }
+}
+
+.modal {
+
+    .modal-header, .modal-footer {
+        background-color: @color-one;
+    }
+
+    .modal-footer {
+        text-align: left;
+    }
+
+    img {
+        width: 700px;
+        text-align: center;
+    }
+}
+
+.pagination-custom {
+
+    li {
+        text-transform: uppercase;
+
+        a {
+            color: @color-two;
+            .transition-fade;
+
+            &:hover {
+                color: @color-three;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .separator {
+        font-weight: @font-bold;
+        font-size: 20px;
+    }
+}

@@ -1,17 +1,25 @@
 {
-  "name": "book",
-  "scripts": {
-    "gulp": "gulp"
-  },
-  "dependencies": {
-    "bootstrap": "3.3.6",
-    "font-awesome-animation": "0.0.8",
-    "jquery": "^2.2.0"
-  },
-  "devDependencies": {
-    "gulp": "^3.9.0",
-    "gulp-concat": "2.6.0",
-    "gulp-less": "3.0.3",
-    "gulp-jscs": "1.6.0"
-  }
+    "name": "book",
+    "version": "1.0",
+    "description": "book with, gulp, jquery, json, bootstrap, less",
+    "main": "gulpfile.js",
+    "scripts": {
+        "dev": "gulp && gulp watch"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://gitlab.com/nicolas.busuttil91/maquette-book"
+    },
+    "author": "Nicolas Busuttil",
+    "dependencies": {
+        "bootstrap": "3.3.6",
+        "font-awesome-animation": "0.0.8",
+        "jquery": "^2.2.0"
+    },
+    "devDependencies": {
+        "gulp": "^3.9.0",
+        "gulp-concat": "2.6.0",
+        "gulp-less": "3.0.3",
+        "gulp-jscs": "1.6.0"
+    }
 }

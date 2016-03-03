@@ -14,7 +14,7 @@
 
     <div class="header-background">
         <a href="index.html"><img class="logo" src="images/logo.jpeg" alt="logo Nicolas Busuttil"></a>
-        <a href="javascript:menu();"><i id="toggleClose" class="fa fa-times btn-menu faa-pulse animated"></i></a>
+        <a href="javascript:menu();"><i class="fa fa-times btn-menu faa-pulse animated"></i></a>
 
         <ul class="text-center list-unstyled">
             <li><a href="/home">Accueil</a></li>
@@ -157,7 +157,7 @@
 
                 <div class="col-lg-6 container-macbook">
                     <div class="cta-macbook">
-                        <a href=""><i class="fa fa-plus"></i></a>
+                        <a class="index-modal" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus"></i></a>
                         <a href="http://www.psih.fr/fr/" target="_blank"><i class="fa fa-desktop space-left"></i></a>
                     </div>
                     <div class="macbook">
@@ -172,7 +172,7 @@
 
                 <div class="col-lg-6 container-macbook">
                     <div class="cta-macbook">
-                        <a href=""><i class="fa fa-plus"></i></a>
+                        <a class="index-modal" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus"></i></a>
                         <a href="http://bi-query.psih.fr/fr/" target="_blank"><i class="fa fa-desktop space-left"></i></a>
                     </div>
                     <div class="macbook">
@@ -187,7 +187,7 @@
 
                 <div class="col-lg-6 container-macbook">
                     <div class="cta-macbook">
-                        <a href=""><i class="fa fa-plus"></i></a>
+                        <a class="index-modal" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus"></i></a>
                         <a href="http://lacalechedesaintclair.fr/" target="_blank"><i class="fa fa-desktop space-left"></i></a>
                     </div>
                     <div class="macbook">
@@ -247,7 +247,18 @@
         </div>
     </div>
 </footer>
-
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content text-center">
+            <div class="modal-header">
+                <h4></h4>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body"></div>
+            <div class="modal-footer"></div>
+        </div>
+    </div>
+</div>
 <script src="js/vendor.js"></script>
 <script src="js/book.js"></script>
 </body>

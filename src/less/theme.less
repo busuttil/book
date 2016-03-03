@@ -47,6 +47,15 @@ body {
 
 header {
 
+    a {
+        color: @color-two;
+        .transition-fade;
+
+        &:hover {
+            color: @color-three;
+        }
+    }
+
     .btn-menu {
         position: fixed;
         top: 30px;
