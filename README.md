@@ -30,3 +30,6 @@ The project is delivered with  test CS you can use since gulp :
 ```shell
 gulp test:cs
 ```
+
+
+Repository of developpement here : <https://gitlab.com/nicolas.busuttil91/maquette-book>
