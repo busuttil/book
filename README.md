@@ -32,4 +32,4 @@ gulp test:cs
 ```
 
 
-Repository of developpement here : <https://gitlab.com/nicolas.busuttil91/maquette-book>
+Repository of development here : <https://gitlab.com/nicolas.busuttil91/maquette-book>
